@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/png" href="images/Jurassic_Park_logo.svg">
+
+</head>
+<body>
+    <main>
+        <form class="contact">
+            <h1>Contact</h1>
+            <div>
+                <label for="lastname"><h3>Nom</h3>
+                    <input type="text" name="lastname" id="lastname" placeholder="Votre nom" required>
+                </label>
+            </div>
+            <div>
+                <label for="name"><h3>Prénom</h3>
+                    <input type="text" name="firstname" id="firstname" placeholder="Votre prénom"  pattern="[A-Za-z]{15}">
+                </label>
+            </div>
+            <div>
+                <label for="mail"><h3>E-mail</h3> 
+                    <input type="email" name="mail" id="mail" placeholder="exemple@mail.be" required>
+                </label>
+            </div>
+            <div class="area__zone">
+                <label for="message"><h3>Message</h3></label>
+                    <textarea name="message" id="message" cols="#" rows="10" placeholder="Votre message" required></textarea>
+            </div>
+            <div class="btns">
+                <button type="reset">Effacer</button>
+                <button id="submit" type="submit">Envoyer</button>
+            </div>
+        </form>
+
+        <div class="merci">
+            <h2>Votre message a bien été envoyé !</h2>
+            <button><a href="index.html">Acceuil</a></button>
+        </div>
+    </main>
+    <script src="js/contact.js"></script>
+</body>
+</html>
